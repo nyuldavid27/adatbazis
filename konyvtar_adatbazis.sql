@@ -23,7 +23,12 @@ CREATE TABLE konyvek (
 CREATE Table olvasok(
     id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nev VARCHAR(100) NOT NULL ,
-    szuletesi-datum DATE,
-    varos VARCHAR(50) DEFAULT Budapest
-    
-)
+    szuletesi_datum DATE,
+    varos VARCHAR(50) DEFAULT 'Budapest',
+    aktiv  ENUM ('igen', 'nem') DEFAULT 'igen',
+    regisztracio_idopontja DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 6. feladat
+
+DESCRIBE konyvek
