@@ -32,5 +32,5 @@ CREATE TABLE szineszek (
 
 --6. feladat
 
-SHOW CREATE TABLE szineszek
+DESCRIBE szineszek;
 
