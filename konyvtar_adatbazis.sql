@@ -25,7 +25,7 @@ CREATE Table olvasok(
     nev VARCHAR(100) NOT NULL ,
     szuletesi_datum DATE,
     varos VARCHAR(50) DEFAULT 'Budapest',
-    aktiv  ENUM ('igen', 'nem') DEFAULT 'igen',
+    aktiv  ENUM('igen', 'nem') DEFAULT 'igen',
     regisztracio_idopontja DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
